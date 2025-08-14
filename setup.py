@@ -17,7 +17,7 @@ import redo.version
 def read(fname):
     return open(os.path.join(mydir, fname)).read()
 
-    
+
 # FIXME: we probably need to build redo/sh on the target system, somehow.
 setuptools.setup(
     name = 'redo-tools',
@@ -47,6 +47,7 @@ setuptools.setup(
             'redo-always=redo.cmd_always:main',
             'redo-ifchange=redo.cmd_ifchange:main',
             'redo-ifcreate=redo.cmd_ifcreate:main',
+            'redo-ifdone=redo.cmd_ifdone:main',
             'redo-log=redo.cmd_log:main',
             'redo-ood=redo.cmd_ood:main',
             'redo-sources=redo.cmd_sources:main',
