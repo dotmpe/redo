@@ -1,0 +1,9 @@
+---
+- main: apenwarr/redo
+  id: apenwarr/redo
+  version: 0.42c+
+  type: application/vnd.org.wtwta.project
+  scripts:
+    build+test: ./do -j10 test
+    install: DESTDIR= PREFIX=/usr/local ./do -j10 install
+  created: 2026-09-06T02:48+02:00
